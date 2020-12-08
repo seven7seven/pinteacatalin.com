@@ -1,7 +1,7 @@
 
 function HomePage() {
   return <>
-    <h1>Labatastik.</h1>
+    <h1>Labaketzi.</h1>
   </>
 }
 
