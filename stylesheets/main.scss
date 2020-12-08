@@ -5,6 +5,15 @@ $color-accent: #FEF777;
 $color-dark: #20211D;
 $color-light: #F1F1F1;
 
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
 body, html {
 	background: $color-main;
+}
+
+h1 {
+  font-family: Vollkorn;
+  color: $color-light;
+  text-align: center;
+  font-size: 48px;
 }
