@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="138px" height="80px" viewBox="0 0 138 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Block</title>
+    <defs>
+        <radialGradient cx="0%" cy="50%" fx="0%" fy="50%" r="146.306012%" gradientTransform="translate(0.000000,0.500000),scale(0.579701,1.000000),rotate(6.935899),translate(-0.000000,-0.500000)" id="radialGradient-1">
+            <stop stop-color="#E02020" offset="0%"></stop>
+            <stop stop-color="#E3271D" offset="0%"></stop>
+            <stop stop-color="#FA6400" offset="16.7194618%"></stop>
+            <stop stop-color="#F7B500" offset="33.3898731%"></stop>
+            <stop stop-color="#6DD400" offset="50.0513863%"></stop>
+            <stop stop-color="#0091FF" offset="66.5668601%"></stop>
+            <stop stop-color="#6236FF" offset="83.3200233%"></stop>
+            <stop stop-color="#B620E0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-Copy-2" transform="translate(-100.000000, -599.000000)" fill="url(#radialGradient-1)">
+            <polygon id="Block" points="169.001143 599 238.002287 638.837829 238.002287 639.162171 169.001143 679 100 639.162171 100 638.837829"></polygon>
+        </g>
+    </g>
+</svg>

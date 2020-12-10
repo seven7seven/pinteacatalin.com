@@ -5,7 +5,39 @@ $color-accent: #FEF777;
 $color-dark: #20211D;
 $color-light: #F1F1F1;
 
+$block-w: 138px;
+$block-h: 80px;
+
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
+.text-center {
+  text-align: center;
+}
+
+.blocks {
+  @extend .text-center;
+  svg {
+    margin: 0px auto;
+
+    &:nth-child(3n) {
+      transform: rotate(120deg);
+      position: relative;
+
+      left: - $block-w * 1.75;
+      top: $block-h * .75;
+    }
+    &:nth-child(3n+1) {
+      position: relative;
+
+    }
+    &:nth-child(3n+2) {
+      transform: rotate(240deg);
+      position: relative;
+      left: - $block-w * 1.25;
+      top: $block-h * .75;
+    }
+  }
+}
 
 body, html {
 	background: $color-main;
@@ -13,7 +45,7 @@ body, html {
 
 h1 {
   font-family: Vollkorn;
-  color: $color-accent;
+  color: $color-secondary;
   text-align: center;
   font-size: 48px;
 }
