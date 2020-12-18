@@ -5,7 +5,7 @@ const BlockComponent = dynamic(() => import('../components/block'))
 function HomePage() {
   const nBlocks = 7;
 
-  let blocks = [...Array(nBlocks)].map((e, i) => <BlockComponent />);
+  let blocks = [...Array(nBlocks)].map((e, i) => <BlockComponent key={i} />);
 
   return <>
     <div className='header'>
