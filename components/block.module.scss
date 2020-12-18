@@ -9,6 +9,8 @@ $side-h: $block-scale * $side-h-base;
   height: 2 * $side-h;
   position: relative;
 
+  margin-right: 1rem;
+
   svg {
     width: $side-w;
     height: $side-h;
@@ -19,9 +21,9 @@ $side-h: $block-scale * $side-h-base;
     }
     // Left
     &:nth-child(2) {
-      transform: rotate(240deg);
+      transform: rotate(-120deg);
       position: absolute;
-      left: - $side-w * 1.25;
+      left: - .25 * $side-w;
       top: $side-h * .75;
     }
     // Right
@@ -29,7 +31,7 @@ $side-h: $block-scale * $side-h-base;
       transform: rotate(120deg);
       position: absolute;
 
-      left: - $side-w * 1.75;
+      left: .25 * $side-w;
       top: $side-h * .75;
     }
   }
