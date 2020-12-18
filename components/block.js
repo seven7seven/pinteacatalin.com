@@ -4,7 +4,7 @@ import styles from './block.module.scss'
 export default function BlockComponent() {
 
   return (
-    <div className="block">
+    <div className={styles.block}>
       <Side />
       <Side />
       <Side />

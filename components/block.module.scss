@@ -1,33 +1,36 @@
-$block-w-base: 97px;
-$block-h-base: 56px;
+@import "../stylesheets/variables";
 
-$block-scale: 2;
-
-$block-w: $block-scale * 97px;
-$block-h: $block-scale * 56px;
+$side-w: $block-scale * $side-w-base;
+$side-h: $block-scale * $side-h-base;
 
 .block {
+  display: inline-block;
+  width: $side-w;
+  height: 2 * $side-h;
+  position: relative;
+
   svg {
-    margin: 0px auto;
-    width: $block-w;
-    height: $block-h;
+    width: $side-w;
+    height: $side-h;
 
-    &:nth-child(3n) {
-      transform: rotate(120deg);
+    // Top
+    &:nth-child(1) {
       position: relative;
-
-      left: - $block-w * 1.75;
-      top: $block-h * .75;
     }
-    &:nth-child(3n+1) {
-      position: relative;
-
-    }
-    &:nth-child(3n+2) {
+    // Left
+    &:nth-child(2) {
       transform: rotate(240deg);
-      position: relative;
-      left: - $block-w * 1.25;
-      top: $block-h * .75;
+      position: absolute;
+      left: - $side-w * 1.25;
+      top: $side-h * .75;
+    }
+    // Right
+    &:nth-child(3) {
+      transform: rotate(120deg);
+      position: absolute;
+
+      left: - $side-w * 1.75;
+      top: $side-h * .75;
     }
   }
 }

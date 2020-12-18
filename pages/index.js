@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic'
 const BlockComponent = dynamic(() => import('../components/block'))
 
 function HomePage() {
-  const nBlocks = 7;
+  const nBlocks = 1;
 
   let blocks = [...Array(nBlocks)].map((e, i) => <BlockComponent key={i} />);
 
