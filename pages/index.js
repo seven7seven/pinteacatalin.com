@@ -11,7 +11,7 @@ function HomePage() {
     <div className='header'>
       <h1>Pintea Cătălin</h1>
       <div className="text-center">
-        <p>Building the web, one component at a time</p>
+        <p>Nexus for my online work & presence</p>
       </div>
     </div>
     <div className="blocks">

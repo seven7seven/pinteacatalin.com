@@ -10,8 +10,11 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
+          <title>Pintea Cătălin — Nexus for my online work & presence</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
