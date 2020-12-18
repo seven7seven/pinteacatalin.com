@@ -1,4 +1,4 @@
-import Side from '../images/svg/side.svg';
+import Side from '../public/images/svg/side.svg';
 import styles from './block.module.scss'
 
 export default function BlockComponent() {

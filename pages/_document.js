@@ -13,7 +13,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <title>Pintea Cătălin — Nexus for my online work & presence</title>
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <link rel="shortcut icon" href="/images/svg/side.svg" />
 
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
