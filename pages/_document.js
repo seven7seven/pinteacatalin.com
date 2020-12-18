@@ -12,9 +12,6 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <title>Pintea Cătălin — Nexus for my online work & presence</title>
-          <link rel="shortcut icon" href="/images/svg/side.svg" />
-
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
