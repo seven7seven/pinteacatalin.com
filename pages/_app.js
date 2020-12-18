@@ -21,6 +21,8 @@ const App = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
+        <title>Pintea Cătălin — Nexus for my online work & presence</title>
+        <link rel="shortcut icon" href="/images/svg/side.svg" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Component {...pageProps} />
