@@ -5,10 +5,8 @@ $color-accent: #FEF777;
 $color-dark: #20211D;
 $color-light: #F1F1F1;
 
-$block-w: 138px;
-$block-h: 80px;
-
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 .text-center {
   text-align: center;
@@ -16,36 +14,36 @@ $block-h: 80px;
 
 .blocks {
   @extend .text-center;
-  svg {
-    margin: 0px auto;
-
-    &:nth-child(3n) {
-      transform: rotate(120deg);
-      position: relative;
-
-      left: - $block-w * 1.75;
-      top: $block-h * .75;
-    }
-    &:nth-child(3n+1) {
-      position: relative;
-
-    }
-    &:nth-child(3n+2) {
-      transform: rotate(240deg);
-      position: relative;
-      left: - $block-w * 1.25;
-      top: $block-h * .75;
-    }
-  }
 }
 
 body, html {
-	background: $color-main;
+	background: $color-light;
+}
+
+.header {
+  margin-bottom: 2rem;
 }
 
 h1 {
   font-family: Vollkorn;
-  color: $color-secondary;
+  color: $color-dark;
   text-align: center;
-  font-size: 48px;
+  font-size: 2.9rem;
+  margin-bottom: .5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: .9rem;
+  color: $color-dark;
+  font-family: 'Open Sans';
+}
+
+a {
+  color: $color-main;
+}
+
+.blocks {
+  margin-bottom: 2rem;
 }

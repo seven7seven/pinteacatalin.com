@@ -1,0 +1,33 @@
+$block-w-base: 97px;
+$block-h-base: 56px;
+
+$block-scale: 2;
+
+$block-w: $block-scale * 97px;
+$block-h: $block-scale * 56px;
+
+.block {
+  svg {
+    margin: 0px auto;
+    width: $block-w;
+    height: $block-h;
+
+    &:nth-child(3n) {
+      transform: rotate(120deg);
+      position: relative;
+
+      left: - $block-w * 1.75;
+      top: $block-h * .75;
+    }
+    &:nth-child(3n+1) {
+      position: relative;
+
+    }
+    &:nth-child(3n+2) {
+      transform: rotate(240deg);
+      position: relative;
+      left: - $block-w * 1.25;
+      top: $block-h * .75;
+    }
+  }
+}

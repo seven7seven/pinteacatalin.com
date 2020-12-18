@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="97px" height="56px" viewBox="0 0 97 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Side</title>
+    <defs>
+        <linearGradient x1="84.1929968%" y1="55.8892482%" x2="37.0135843%" y2="33.3333333%" id="linearGradient-1">
+            <stop stop-color="#E02020" offset="0%"></stop>
+            <stop stop-color="#FA6400" offset="16.7194618%"></stop>
+            <stop stop-color="#F7B500" offset="33.3898731%"></stop>
+            <stop stop-color="#6DD400" offset="50.0513863%"></stop>
+            <stop stop-color="#0091FF" offset="66.5668601%"></stop>
+            <stop stop-color="#6236FF" offset="83.3200233%"></stop>
+            <stop stop-color="#B620E0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-Copy-2" transform="translate(-111.000000, -826.000000)" fill="url(#linearGradient-1)">
+            <path d="M159.5,826 L208,854.001488 L159.5,882.002976 L111,854.001488 L159.5,826 Z" id="Side"></path>
+        </g>
+    </g>
+</svg>
