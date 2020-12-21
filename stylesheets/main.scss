@@ -9,6 +9,16 @@
 
 .blocks {
   @extend .text-center;
+  padding-bottom: $side-h;
+
+  .blocks-row {
+    height: $side-h;
+    &:nth-child(2n) {
+      position: relative;
+      right: $side-w / 2;
+      top: - $side-h / 2;
+    }
+  }
 }
 
 body, html {

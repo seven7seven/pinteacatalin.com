@@ -1,15 +1,10 @@
 @import "../stylesheets/variables";
 
-$side-w: $block-scale * $side-w-base;
-$side-h: $block-scale * $side-h-base;
-
 .block {
   display: inline-block;
   width: $side-w;
-  height: 2 * $side-h;
+  height: $side-h;
   position: relative;
-
-  margin-right: 1rem;
 
   svg {
     width: $side-w;
@@ -28,7 +23,7 @@ $side-h: $block-scale * $side-h-base;
     }
     // Right
     &:nth-child(3) {
-      transform: rotate(120deg);
+      transform: rotate(-60deg);
       position: absolute;
 
       left: .25 * $side-w;

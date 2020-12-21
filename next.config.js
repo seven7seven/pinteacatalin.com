@@ -7,7 +7,18 @@ module.exports = {
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
-      use: ["@svgr/webpack"]
+      ({resource}) => ({
+        loader: '@svgr/webpack',
+        options: {
+          svgoConfig: {
+            plugins: [{
+              "cleanupIDs": {
+                "prefix": `svg${hash(relative(context, resource))}`
+              }
+            }]
+          }
+        }
+      })
     });
 
     return config;

@@ -3,9 +3,16 @@ import dynamic from 'next/dynamic'
 const BlockComponent = dynamic(() => import('../components/block'))
 
 function HomePage() {
-  const nBlocks = 3;
+  const nRows = 4,
+        nCols = 3;
 
-  let blocks = [...Array(nBlocks)].map((e, i) => <BlockComponent key={i} />);
+  let blocks = [];
+  for (var i = nRows - 1; i >= 0; i--) {
+    let row = [...Array(nCols)].map((e, j) => <BlockComponent key={j} />);
+    blocks.push(<div className="blocks-row" key={i}>
+      { row }
+    </div>);
+  }
 
   return <>
     <div className='header'>
