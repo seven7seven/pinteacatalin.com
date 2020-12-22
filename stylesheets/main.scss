@@ -1,7 +1,6 @@
 @import "variables";
 
-@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap');
 
 .text-center {
   text-align: center;
@@ -10,6 +9,7 @@
 .blocks {
   @extend .text-center;
   padding-bottom: $side-h;
+  padding-left: $side-w / 2;
 
   .blocks-row {
     height: $side-h;
@@ -22,7 +22,7 @@
 }
 
 body, html {
-	background: $color-light;
+	background: $color-bg;
 }
 
 .header {
@@ -30,23 +30,26 @@ body, html {
 }
 
 h1 {
-  font-family: Vollkorn;
-  color: $color-dark;
+  font-family: 'Recursive', monospace;
+  color: $color-text;
   text-align: center;
   font-size: 2.9rem;
   margin-bottom: .5rem;
+  font-weight: 50;
+  font-variation-settings: 'MONO' 0, 'CASL' 0.1, 'slnt' 0, 'CRSV' 0;
 }
 
 p {
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: .9rem;
-  color: $color-dark;
-  font-family: 'Open Sans';
+  color: $color-text;
+  font-family: 'Recursive', monospace;
+  font-variation-settings: 'MONO' .2, 'CASL' .3, 'slnt' 0, 'CRSV' 0;
 }
 
 a {
-  color: $color-main;
+  color: $color-links;
 }
 
 .blocks {

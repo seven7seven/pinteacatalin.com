@@ -28,13 +28,13 @@ function HomePage() {
     </div>
     <div className="text-center">
       <p>
-        🏡 Currently improving the way real estate is transactioned <a href="https://www.crmrebs.ro/" target="_blank">@REBS</a>
+        Currently improving the way real estate is transactioned <a href="https://www.crmrebs.ro/" target="_blank">@REBS</a>
       </p>
       <p>
-        🚧 This is a living experiment and <a href="https://github.com/seven7seven/pinteacatalin.com" target="_blank">its source code is public</a>.
+        This is a living experiment and <a href="https://github.com/seven7seven/pinteacatalin.com" target="_blank">its source code is public</a>.
       </p>
       <p>
-        📬 Reach out at <a href="mailto:catalin@rebs.ro" target="_blank">catalin@rebs.ro</a>
+        Get in touch — <a href="mailto:catalin@rebs.ro" target="_blank">catalin@rebs.ro</a>
       </p>
     </div>
   </>
