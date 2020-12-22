@@ -11,9 +11,12 @@ module.exports = {
         {
           loader: '@svgr/webpack',
           options: {
+            svgo: false,
             svgoConfig: {
               plugins: [{
-                uniqueID: require('svgo-unique-id'),
+                cleanupIDs: {
+                  minify: false,
+                }
               }]
             }
           },

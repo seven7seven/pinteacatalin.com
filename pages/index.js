@@ -1,6 +1,7 @@
-import dynamic from 'next/dynamic'
+import dynamic from 'next/dynamic';
 
-const BlockComponent = dynamic(() => import('../components/block'))
+const BlockComponent = dynamic(() => import('../components/block'));
+import Gradients from '../public/images/svg/gradients.svg';
 
 function HomePage() {
   const nRows = 4,
@@ -21,6 +22,7 @@ function HomePage() {
         <p>Nexus for my online work & presence</p>
       </div>
     </div>
+    <Gradients />
     <div className="blocks">
       { blocks }
     </div>
