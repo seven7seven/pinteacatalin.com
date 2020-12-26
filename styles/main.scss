@@ -2,31 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap');
 
-.text-center {
-  text-align: center;
-}
-
-.blocks {
-  @extend .text-center;
-  padding-bottom: $side-h;
-  padding-left: $side-w / 2;
-
-  .blocks-row {
-    height: $side-h;
-    &:nth-child(2n) {
-      position: relative;
-      right: $side-w / 2;
-      top: - $side-h / 2;
-    }
-  }
-}
-
 body, html {
 	background: $color-bg;
-}
-
-.header {
-  margin-bottom: 2rem;
 }
 
 h1 {
@@ -50,8 +27,4 @@ p {
 
 a {
   color: $color-links;
-}
-
-.blocks {
-  margin-bottom: 2rem;
 }

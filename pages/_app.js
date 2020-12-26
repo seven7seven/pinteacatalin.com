@@ -1,10 +1,13 @@
-import { useEffect } from 'react'
-import { useRouter } from 'next/router'
-import Head from 'next/head'
-import * as gtag from '../lib/gtag'
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
-import 'normalize.css/normalize.css'
-import '../stylesheets/main.scss'
+import * as gtag from '../lib/gtag';
+
+import Meta from '../components/meta';
+
+import 'normalize.css/normalize.css';
+import '../styles/main.scss';
+
 
 const App = ({ Component, pageProps }) => {
   const router = useRouter()
@@ -20,11 +23,7 @@ const App = ({ Component, pageProps }) => {
 
   return (
     <>
-      <Head>
-        <title>Pintea Cătălin — Nexus for my online work & presence</title>
-        <link rel="shortcut icon" href="/images/svg/side.svg" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
+      <Meta />
       <Component {...pageProps} />
     </>
   )
