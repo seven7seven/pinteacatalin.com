@@ -1,8 +1,7 @@
-import dynamic from 'next/dynamic';
-import Gradients from '../public/images/svg/gradients.svg';
-const BlockComponent = dynamic(() => import('../components/block'));
+import Gradients from '../public/images/svg/gradients.svg'
+import BlockComponent from '../components/block'
 
-import styles from '../styles/blocks.module.scss';
+import styles from '../styles/blocks.module.scss'
 
 export default function Blocks({ nRows, nCols }) {
 

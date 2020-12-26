@@ -1,5 +1,6 @@
-import Layout from '../components/layout';
-import Blocks from '../components/blocks';
+import Layout from '../components/layout'
+import Blocks from '../components/blocks'
+
 import stylesUtils from '../styles/utils.module.scss'
 
 function HomePage() {

@@ -1,0 +1,26 @@
+@import "variables";
+
+.nav {
+  text-align: center;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  font-family: 'Recursive', monospace;
+  font-weight: 650 !important;
+  font-variation-settings: 'MONO' 0, 'CASL' .4, 'slnt' 0, 'CRSV' 0;
+
+  font-size: $font-size;
+  padding: .5em 1em;
+  margin: 0 .5em;
+  border-radius: .2em;
+  text-decoration: none !important;
+
+  &.active {
+    color: $color-nav;
+    background: $color-nav-bg;
+  }
+}

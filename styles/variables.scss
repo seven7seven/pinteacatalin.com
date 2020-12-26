@@ -1,3 +1,6 @@
+// Constants
+$phi: 1.6180339887498948482;
+
 // Colors
 $color-main: #3533EA;
 $color-secondary: #DA594C;
@@ -5,10 +8,20 @@ $color-accent: #FEF777;
 $color-dark: #20211D;
 $color-light: #F1F1F1;
 
+// Font sizes
+$font-scale: 1.333;
+$font-size: 14px;
+$font-size-sm: $font-size * (1 / $font-scale);
+$font-size-md: $font-size * $font-scale;
+$font-size-lg: $font-size-md * $font-scale;
+$font-size-xl: $font-size-md * $font-scale * $font-scale * $font-scale;
+
 // Colors settings
 $color-text: $color-light;
 $color-bg: $color-dark;
 $color-links: $color-light;
+$color-nav: $color-accent;
+$color-nav-bg: $color-main;
 
 // Block layout & size
 $side-w-base: 97px;

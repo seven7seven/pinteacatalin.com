@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="204px" height="205px" viewBox="11 0 171 205" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>CP</title>
+    <defs>
+        <radialGradient cx="100%" cy="50%" fx="100%" fy="50%" r="160.76289%" gradientTransform="translate(1.000000,0.500000),scale(0.577350,1.000000),rotate(171.037036),translate(-1.000000,-0.500000)" id="radialGradient-1">
+            <stop stop-color="#E02020" offset="0%"></stop>
+            <stop stop-color="#FA6400" offset="16.7194618%"></stop>
+            <stop stop-color="#F7B500" offset="33.3898731%"></stop>
+            <stop stop-color="#6DD400" offset="50.0513863%"></stop>
+            <stop stop-color="#0091FF" offset="66.5668601%"></stop>
+            <stop stop-color="#6236FF" offset="83.3200233%"></stop>
+            <stop stop-color="#B620E0" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#E02020" offset="0%"></stop>
+            <stop stop-color="#FA6400" offset="16.7194618%"></stop>
+            <stop stop-color="#F7B500" offset="33.3898731%"></stop>
+            <stop stop-color="#6DD400" offset="50.0513863%"></stop>
+            <stop stop-color="#0091FF" offset="66.5668601%"></stop>
+            <stop stop-color="#6236FF" offset="83.3200233%"></stop>
+            <stop stop-color="#B620E0" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-34.5%" y="-26.7%" width="169.0%" height="153.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="-9" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-Copy-2" transform="translate(6.000000, 18.000000)" fill="url(#radialGradient-1)" stroke="url(#linearGradient-2)" stroke-width="4">
+            <g id="CP" transform="translate(-6.000000, 0.000000)">
+                <g id="Path" transform="translate(24.000000, 26.000000)">
+                    <path d="M48.5,2.30940108 L93,28.0014881 L48.5,53.693575 L4,28.0014881 L48.5,2.30940108 Z"></path>
+                </g>
+                <g id="Group" transform="translate(0.000000, 68.000000)">
+                    <g id="Side" transform="translate(48.500000, 28.000000) rotate(-120.000000) translate(-48.500000, -28.000000) ">
+                        <path d="M48.5,2.30940108 L93,28.0014881 L48.5,53.693575 L4,28.0014881 L48.5,2.30940108 Z" id="Base"></path>
+                    </g>
+                </g>
+                <g id="Group" filter="url(#filter-3)" transform="translate(61.500000, 11.689111)">
+                    <g transform="translate(8.000000, 21.000000)" id="Side">
+                        <g transform="translate(48.500000, 28.000000) rotate(-30.000000) translate(-48.500000, -28.000000) ">
+                            <path d="M48.5,2.30940108 L93,28.0014881 L48.5,53.693575 L4,28.0014881 L48.5,2.30940108 Z" id="Path"></path>
+                        </g>
+                    </g>
+                    <g transform="translate(8.215390, 69.373067)" id="Side">
+                        <g transform="translate(48.500000, 28.000000) rotate(-150.000000) translate(-48.500000, -28.000000) ">
+                            <path d="M48.5,2.30940108 L93,28.0014881 L48.5,53.693575 L4,28.0014881 L48.5,2.30940108 Z" id="Base"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

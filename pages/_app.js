@@ -1,12 +1,12 @@
-import { useEffect } from 'react';
-import { useRouter } from 'next/router';
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 
-import * as gtag from '../lib/gtag';
+import * as gtag from '../lib/gtag'
 
-import Meta from '../components/meta';
+import Meta from '../components/meta'
 
-import 'normalize.css/normalize.css';
-import '../styles/main.scss';
+import 'normalize.css/normalize.css'
+import '../styles/main.scss'
 
 
 const App = ({ Component, pageProps }) => {
