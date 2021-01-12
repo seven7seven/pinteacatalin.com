@@ -14,7 +14,7 @@ export default function Gallery() {
       <div className={styles.item}>
         <Image
           src={ imgPath }
-          alt={ `Photographia del blano` } // TODO
+          alt={ `Gallery image` }
           layout="fill"
           objectFit="cover"
           key={ imgPath }
