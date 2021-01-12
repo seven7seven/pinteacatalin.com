@@ -1,0 +1,15 @@
+@import "variables";
+
+.gallery {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.item {
+  > div, img {
+    height: 400px;
+    position: static !important;
+  }
+}

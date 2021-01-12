@@ -4,6 +4,13 @@
 
 body, html {
 	background: $color-bg;
+
+  &.transparent {
+    background: transparent;
+    background: linear-gradient(180deg, $color-bg 0%, $color-bg 15%, rgba(255,255,255,0) 100%);
+
+    min-height: 500px;
+  }
 }
 
 p {

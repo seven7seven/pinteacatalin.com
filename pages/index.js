@@ -1,9 +1,17 @@
+import { useEffect } from 'react'
+
 import Layout from '../components/layout'
 import Blocks from '../components/blocks'
 
 import stylesUtils from '../styles/utils.module.scss'
 
 function HomePage() {
+
+  useEffect(() => {
+    // Update the body class
+    document.querySelector("body").classList.remove("transparent");
+  });
+
   return <Layout>
     <Blocks nRows={3} nCols={3} />
     <div className={stylesUtils.textCenter}>
