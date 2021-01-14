@@ -6,6 +6,7 @@ import * as gtag from '../lib/gtag'
 import Meta from '../components/meta'
 
 import 'normalize.css/normalize.css'
+import 'include-media/dist/_include-media.scss'
 import '../styles/main.scss'
 
 

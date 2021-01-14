@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@svgr/webpack": "^5.5.0",
+    "include-media": "^1.4.9",
     "next": "^10.0.3",
     "normalize.css": "^8.0.1",
     "react": "^17.0.1",

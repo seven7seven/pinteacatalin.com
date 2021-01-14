@@ -1,4 +1,7 @@
+@import 'include-media/dist/_include-media';
+
 @import "variables";
+
 
 .gallery {
   width: 100%;
@@ -9,7 +12,26 @@
 
 .item {
   > div, img {
-    height: 400px;
     position: static !important;
+
+    height: 400px;
+    @include media("<oldphone") {
+      height: 400px;
+    }
+    @include media("<phone", ">oldphone") {
+      height: 500px;
+    }
+    @include media(">tablet") {
+      height: 450px;
+    }
+    @include media(">laptop") {
+      height: 550px;
+    }
+    @include media(">desktop") {
+      height: 650px;
+    }
+    @include media(">fourk") {
+      height: 1000px;
+    }
   }
 }

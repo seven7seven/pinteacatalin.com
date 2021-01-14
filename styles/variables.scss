@@ -32,3 +32,6 @@ $block-scale: 1;
 $side-w: $block-scale * $side-w-base;
 $side-h: $block-scale * $side-h-base;
 
+
+// Overrides
+$breakpoints: (oldphone: 325px, phone: 420px, tablet: 768px, laptop: 1024px, desktop: 1440px, fourk: 2500px);

@@ -26,8 +26,9 @@ Gallery.renderImage = (imgPath, index) => {
     <Image
       src={ imgPath }
       alt={ `Gallery image` }
-      layout="fill"
+
       objectFit="cover"
+      layout="fill"
       key={ index }
     />
   </div>
