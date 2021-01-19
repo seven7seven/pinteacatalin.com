@@ -22,11 +22,15 @@ Gallery.renderGallery = (data) => {
 }
 
 Gallery.renderImage = (imgPath, index) => {
+  let renderProps = {
+    loading: index > 2 ? "lazy" : "eager",
+    priority: index <= 2
+  }
   return <div key={index} className={styles.item}>
     <Image
       src={ imgPath }
       alt={ `Gallery image #${index+1}` }
-      loading="lazy"
+      {...renderProps}
       objectFit="cover"
       layout="fill"
       key={ index }
