@@ -25,8 +25,8 @@ Gallery.renderImage = (imgPath, index) => {
   return <div key={index} className={styles.item}>
     <Image
       src={ imgPath }
-      alt={ `Gallery image` }
-
+      alt={ `Gallery image #${index+1}` }
+      loading="lazy"
       objectFit="cover"
       layout="fill"
       key={ index }
