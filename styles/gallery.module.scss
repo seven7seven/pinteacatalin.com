@@ -10,6 +10,12 @@
   z-index: -1;
 }
 
+.loading {
+  background: $color-nav-bg;
+  width: 100%;
+  height: 200px;
+}
+
 .item {
   > div, img {
     position: static !important;

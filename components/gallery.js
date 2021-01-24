@@ -17,7 +17,7 @@ function Gallery() {
 Gallery.renderGallery = (data) => {
   if (data) return data.map((imgPath, index) => Gallery.renderImage(imgPath, index))
   if (!data) {
-    return '...'
+    return <div className={styles.loading}>Loading...</div>
   }
 }
 
