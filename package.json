@@ -1,22 +1,28 @@
 {
   "name": "pinteacatalin.com",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build_static": "next build && next export",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@svgr/webpack": "^5.5.0",
-    "include-media": "^1.4.9",
-    "next": "^10.0.3",
+    "@svgr/webpack": "^8.1.0",
+    "include-media": "^2.0.0",
+    "next": "^15.1.0",
     "normalize.css": "^8.0.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "sass": "^1.30.0",
-    "svgo-unique-id": "^1.0.0",
-    "swr": "^0.4.0"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "sass": "^1.83.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^9.17.0",
+    "eslint-config-next": "^15.1.0",
+    "typescript": "^5.7.2"
   }
 }

@@ -1,14 +1,13 @@
-@import "variables";
+@import "../styles/variables";
 
 @import url('https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap');
 
 body, html {
-	background: $color-bg;
+  background: $color-bg;
 
   &.transparent {
     background: transparent;
     background: linear-gradient(180deg, fade-out($color-bg, 0) 0%, fade-out($color-bg, .1 ) 20%, rgba(255,255,255,0) 60%);
-
     min-height: 420px;
   }
 }

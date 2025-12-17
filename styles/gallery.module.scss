@@ -17,27 +17,26 @@
 }
 
 .item {
-  > div, img {
-    position: static !important;
+  position: relative;
+  width: 100%;
 
+  height: 400px;
+  @include media("<oldphone") {
     height: 400px;
-    @include media("<oldphone") {
-      height: 400px;
-    }
-    @include media("<phone", ">oldphone") {
-      height: 500px;
-    }
-    @include media(">tablet") {
-      height: 450px;
-    }
-    @include media(">laptop") {
-      height: 550px;
-    }
-    @include media(">desktop") {
-      height: 650px;
-    }
-    @include media(">fourk") {
-      height: 1000px;
-    }
+  }
+  @include media("<phone", ">oldphone") {
+    height: 500px;
+  }
+  @include media(">tablet") {
+    height: 450px;
+  }
+  @include media(">laptop") {
+    height: 550px;
+  }
+  @include media(">desktop") {
+    height: 650px;
+  }
+  @include media(">fourk") {
+    height: 1000px;
   }
 }
