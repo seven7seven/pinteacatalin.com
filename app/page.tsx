@@ -1,12 +1,11 @@
 import LayoutWrapper from '@/components/layout-wrapper'
 import Blocks from '@/components/blocks'
-import styles from '@/styles/utils.module.scss'
 
 export default function HomePage() {
   return (
     <LayoutWrapper>
       <Blocks nRows={3} nCols={3} />
-      <div className={styles.textCenter}>
+      <div className="text-center">
         <p>
           Currently improving the way real estate is transactioned{' '}
           <a href="https://www.crmrebs.ro/" target="_blank" rel="noopener noreferrer">

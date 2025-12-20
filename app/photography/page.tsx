@@ -2,7 +2,6 @@ import fs from 'fs'
 import path from 'path'
 import LayoutWrapper from '@/components/layout-wrapper'
 import Gallery from '@/components/gallery'
-import styles from '@/styles/utils.module.scss'
 
 async function getPhotos(): Promise<string[]> {
   const photoDirectory = 'images/photography'
@@ -16,7 +15,7 @@ export default async function PhotographyPage() {
 
   return (
     <LayoutWrapper isTransparent>
-      <div className={styles.textCenter}>
+      <div className="text-center">
         <Gallery photos={photos} />
       </div>
     </LayoutWrapper>

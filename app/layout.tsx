@@ -1,9 +1,21 @@
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
+import { Inter, Recursive } from 'next/font/google'
 import Analytics from '@/components/analytics'
 
-import 'normalize.css/normalize.css'
-import './globals.scss'
+import './globals.css'
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+})
+
+const recursive = Recursive({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-recursive',
+})
 
 export const metadata: Metadata = {
   title: 'Pintea Cătălin — Digital designer, builder & entrepreneur in Cluj-Napoca',
@@ -34,7 +46,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${inter.variable} ${recursive.variable} ${inter.className}`}>
         {children}
         <Suspense fallback={null}>
           <Analytics />

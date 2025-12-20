@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-main: #3533EA;
+  --color-secondary: #DA594C;
+  --color-accent: #FEF777;
+  --color-dark: #20211D;
+  --color-light: #F1F1F1;
+
+  --font-family-sans: var(--font-inter), system-ui, sans-serif;
+  --font-family-recursive: var(--font-recursive), monospace;
+
+  --font-size-base: 15px;
+  --font-size-sm: 12px;
+  --font-size-md: 18.75px;
+  --font-size-lg: 23.4px;
+  --font-size-xl: 36.6px;
+
+  --breakpoint-oldphone: 325px;
+  --breakpoint-phone: 420px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-laptop: 1024px;
+  --breakpoint-desktop: 1440px;
+  --breakpoint-fourk: 2500px;
+}
+
+@layer base {
+  body, html {
+    background-color: var(--color-dark);
+    font-family: var(--font-family-sans);
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body.transparent {
+    background: transparent;
+    background: linear-gradient(180deg, rgba(32, 33, 29, 1) 0%, rgba(32, 33, 29, 0.9) 20%, rgba(255, 255, 255, 0) 60%);
+    min-height: 420px;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: var(--font-size-base);
+    color: var(--color-light);
+    line-height: 1.6;
+  }
+
+  a {
+    color: var(--color-light);
+  }
+}
+
+@layer components {
+  .title {
+    font-family: var(--font-family-recursive);
+    font-size: var(--font-size-xl);
+    color: var(--color-light);
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-weight: 550;
+    font-variation-settings: 'MONO' 0, 'CASL' 0.3, 'slnt' 0, 'CRSV' 0;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

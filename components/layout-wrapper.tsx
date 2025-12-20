@@ -2,8 +2,6 @@
 
 import { useEffect } from 'react'
 import Nav from './nav'
-import styles from '@/styles/layout.module.scss'
-import stylesUtils from '@/styles/utils.module.scss'
 
 interface LayoutWrapperProps {
   children: React.ReactNode
@@ -26,9 +24,9 @@ export default function LayoutWrapper({ children, isTransparent = false }: Layou
   return (
     <>
       <Nav />
-      <div className={styles.header}>
-        <h1 className={stylesUtils.title}>Pintea Cătălin</h1>
-        <div className={stylesUtils.textCenter}>
+      <div className="mb-8">
+        <h1 className="title">Pintea Cătălin</h1>
+        <div className="text-center">
           <p>Nexus for my online work & presence</p>
         </div>
       </div>

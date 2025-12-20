@@ -1,5 +1,4 @@
 import type { NextConfig } from 'next'
-import path from 'path'
 
 const nextConfig: NextConfig = {
   images: {
@@ -9,9 +8,6 @@ const nextConfig: NextConfig = {
         hostname: 'pinteacatalin.com',
       },
     ],
-  },
-  sassOptions: {
-    includePaths: [path.join(process.cwd(), 'styles')],
   },
   webpack(config) {
     // Find the existing rule that handles SVG imports

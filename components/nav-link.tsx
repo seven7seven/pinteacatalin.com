@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import styles from '@/styles/nav.module.scss'
 
 interface NavLinkProps {
   href: string
@@ -16,7 +15,9 @@ export default function NavLink({ href, children }: NavLinkProps) {
   return (
     <Link
       href={href}
-      className={`${styles.item} ${isActive ? styles.active : ''}`}
+      className={`font-medium text-base py-2 px-4 mx-2 rounded no-underline tracking-tight ${
+        isActive ? 'text-accent bg-main' : ''
+      }`}
     >
       {children}
     </Link>
