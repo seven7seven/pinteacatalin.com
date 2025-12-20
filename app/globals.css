@@ -10,11 +10,11 @@
   --font-family-sans: var(--font-inter), system-ui, sans-serif;
   --font-family-recursive: var(--font-recursive), monospace;
 
-  --font-size-base: 15px;
-  --font-size-sm: 12px;
-  --font-size-md: 18.75px;
-  --font-size-lg: 23.4px;
-  --font-size-xl: 36.6px;
+  --font-size-base: 13px;
+  --font-size-sm: 11px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 32px;
 
   --breakpoint-oldphone: 325px;
   --breakpoint-phone: 420px;
@@ -28,7 +28,7 @@
   body, html {
     background-color: var(--color-dark);
     font-family: var(--font-family-sans);
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

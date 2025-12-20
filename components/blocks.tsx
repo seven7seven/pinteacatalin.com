@@ -36,7 +36,7 @@ export default function Blocks({ nRows, nCols }: BlocksProps) {
     <>
       <Gradients />
       <div
-        className="text-center mb-8"
+        className="inline-block"
         style={{ paddingBottom: BLOCK_H, paddingLeft: BLOCK_W / 2 }}
       >
         {blocks}
