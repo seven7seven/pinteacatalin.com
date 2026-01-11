@@ -27,7 +27,7 @@ export default function LayoutWrapper({
   return (
     <>
       <Nav />
-      <div className="mb-8">
+      <div className="">
         <h1
           className="text-[32px] text-light text-center mb-2"
           style={{

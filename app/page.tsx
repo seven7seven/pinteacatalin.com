@@ -5,7 +5,7 @@ export default function HomePage() {
   return (
     <LayoutWrapper>
       <div className="grid grid-cols-1 tablet:grid-cols-2 gap-8 items-center max-w-4xl mx-auto px-4">
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-4">
           <Blocks nRows={3} nCols={2} />
         </div>
         <div className="max-w-[280px] mx-auto tablet:max-w-none tablet:mx-0 text-left tablet:text-left">

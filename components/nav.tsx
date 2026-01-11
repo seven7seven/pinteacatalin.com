@@ -7,6 +7,7 @@ export default function Nav() {
     <div className="text-center h-14 flex justify-center items-center">
       <div>
         <NavLink href="/">Home</NavLink>
+        <NavLink href="/work">Work</NavLink>
         <NavLink href="/photography">Photography</NavLink>
       </div>
     </div>
