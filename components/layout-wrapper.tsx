@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Nav from "./nav";
 
 interface LayoutWrapperProps {
@@ -12,6 +12,8 @@ export default function LayoutWrapper({
   children,
   isTransparent = false,
 }: LayoutWrapperProps) {
+  const [isScrolled, setIsScrolled] = useState(false);
+
   useEffect(() => {
     if (isTransparent) {
       document.body.classList.add("transparent");
@@ -24,10 +26,23 @@ export default function LayoutWrapper({
     };
   }, [isTransparent]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 60);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <Nav />
-      <div className="">
+      <Nav isScrolled={isScrolled} />
+      <div
+        className={`transition-all duration-300 ${
+          isScrolled ? "opacity-0 h-0 overflow-hidden" : "opacity-100"
+        }`}
+      >
         <h1
           className="text-[32px] text-light text-center mb-2"
           style={{
