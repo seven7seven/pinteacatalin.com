@@ -6,11 +6,15 @@ import Nav from "./nav";
 interface LayoutWrapperProps {
   children: React.ReactNode;
   isTransparent?: boolean;
+  hideTitle?: boolean;
+  noNavSpacer?: boolean;
 }
 
 export default function LayoutWrapper({
   children,
   isTransparent = false,
+  hideTitle = false,
+  noNavSpacer = false,
 }: LayoutWrapperProps) {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -37,23 +41,25 @@ export default function LayoutWrapper({
 
   return (
     <>
-      <Nav isScrolled={isScrolled} />
-      <div
-        className={`transition-all duration-300 ${
-          isScrolled ? "opacity-0 h-0 overflow-hidden" : "opacity-100"
-        }`}
-      >
-        <h1
-          className="text-[32px] text-light text-center mb-2"
-          style={{
-            fontFamily: "var(--font-recursive), monospace",
-            fontWeight: 550,
-            fontVariationSettings: "'MONO' 0, 'CASL' 0.3, 'slnt' 0, 'CRSV' 0",
-          }}
+      <Nav isScrolled={isScrolled} noSpacer={noNavSpacer} />
+      {!hideTitle && (
+        <div
+          className={`transition-all duration-300 ${
+            isScrolled ? "opacity-0 h-0 overflow-hidden" : "opacity-100"
+          }`}
         >
-          Pintea Cătălin
-        </h1>
-      </div>
+          <h1
+            className="text-[32px] text-light text-center mb-2"
+            style={{
+              fontFamily: "var(--font-recursive), monospace",
+              fontWeight: 550,
+              fontVariationSettings: "'MONO' 0, 'CASL' 0.3, 'slnt' 0, 'CRSV' 0",
+            }}
+          >
+            Pintea Cătălin
+          </h1>
+        </div>
+      )}
       <div>{children}</div>
     </>
   );

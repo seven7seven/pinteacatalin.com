@@ -14,10 +14,8 @@ export default async function PhotographyPage() {
   const photos = await getPhotos()
 
   return (
-    <LayoutWrapper isTransparent>
-      <div className="text-center">
-        <Gallery photos={photos} />
-      </div>
+    <LayoutWrapper isTransparent hideTitle noNavSpacer>
+      <Gallery photos={photos} />
     </LayoutWrapper>
   )
 }
