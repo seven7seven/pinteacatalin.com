@@ -9,6 +9,8 @@ export type Project = {
   thumbnail?: string
   splineEmbed?: string
   protected?: boolean
+  video?: string
+  images?: string[]
 }
 
 export const projects: Project[] = [
@@ -21,7 +23,7 @@ export const projects: Project[] = [
       "SaaS platform for real estate professionals.",
     ].join(' '),
     role: 'Co-founder & Chief Product Officer',
-    tags: ['Founder', 'UX', 'Customer Development', 'Project Management', 'Marketing'],
+    tags: ['Founder', 'UX', 'Customer Development', 'Project Management', 'Marketing', 'Jira'],
     thumbnail: '/images/work/crm-rebs.png',
     highlights: [
       'Used by 3,000+ real estate professionals',
@@ -29,6 +31,15 @@ export const projects: Project[] = [
       'World-class 84 NPS score',
       '228 billion € in property value managed',
       'EU fund investment of 1 mln. €'
+    ],
+    images: [
+      '/images/work/projects/crm/crm-property.png',
+      '/images/work/projects/crm/crm-requests.png',
+      '/images/work/projects/crm/crm-ap-list.png',
+      '/images/work/projects/crm/crm-reports.png',
+      '/images/work/projects/crm/crm-report-details.png',
+      '/images/work/projects/crm/crm-design-center.png',
+      '/images/work/projects/crm/crm-pricing.png',
     ],
   },
   {
@@ -47,6 +58,15 @@ export const projects: Project[] = [
       'Now hosting 460+ real-estate websites',
       'Direct impact in client consumer experience, improving transactions',
       '10 themes created by 3 designers, infinite variations',
+    ],
+    video: 'https://static.crmrebs.ro/video/rsb_video.186c2d2dcdcd.webm',
+    images: [
+      '/images/work/projects/rsb/rsb-dark-home.png',
+      '/images/work/projects/rsb/rsb-risang-home.png',
+      '/images/work/projects/rsb/rsb-listing.png',
+      '/images/work/projects/rsb/rsb-property.png',
+      '/images/work/projects/rsb/rsb-website.png',
+      '/images/work/projects/rsb/rsb-mobile.png',
     ],
   },
   {

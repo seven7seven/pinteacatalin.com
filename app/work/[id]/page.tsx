@@ -1,7 +1,9 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import LayoutWrapper from '@/components/layout-wrapper'
 import PasswordGate from '@/components/password-gate'
+import VideoPlayer from '@/components/video-player'
 import { projects, getProjectById } from '@/data/projects'
 
 export function generateStaticParams() {
@@ -64,6 +66,37 @@ function ProjectContent({ project }: { project: ReturnType<typeof getProjectById
   )
 }
 
+function ProjectAssets({ project }: { project: ReturnType<typeof getProjectById> }) {
+  if (!project) return null
+  if (!project.video && (!project.images || project.images.length === 0)) return null
+
+  return (
+    <div className="max-w-[1440px] mx-auto px-6 mt-8">
+      {project.video && (
+        <div className="mb-12 max-w-[1110px] mx-auto">
+          <VideoPlayer src={project.video} />
+        </div>
+      )}
+
+      {project.images && project.images.length > 0 && (
+        <div className="flex flex-col gap-4">
+          {project.images.map((image, index) => (
+            <Image
+              key={index}
+              src={image}
+              alt={`${project.title} screenshot ${index + 1}`}
+              width={1600}
+              height={1000}
+              sizes="(max-width: 1440px) 100vw, 1440px"
+              className="w-full h-auto rounded-sm tablet:rounded-lg desktop:rounded-2xl"
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}
+
 export default async function ProjectPage({ params }: Props) {
   const { id } = await params
   const project = getProjectById(id)
@@ -76,7 +109,7 @@ export default async function ProjectPage({ params }: Props) {
 
   return (
     <LayoutWrapper>
-      <div className="max-w-[800px] mx-auto px-6 pb-12">
+      <div className="max-w-[800px] mx-auto px-6">
         <div className="text-center mb-8">
           <Link
             href="/work"
@@ -93,6 +126,10 @@ export default async function ProjectPage({ params }: Props) {
           content
         )}
       </div>
+
+      {!project.protected && <ProjectAssets project={project} />}
+
+      <div className="pb-12" />
     </LayoutWrapper>
   )
 }
