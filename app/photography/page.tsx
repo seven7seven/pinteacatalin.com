@@ -1,7 +1,17 @@
 import fs from 'fs'
 import path from 'path'
+import type { Metadata } from 'next'
 import LayoutWrapper from '@/components/layout-wrapper'
 import Gallery from '@/components/gallery'
+
+export const metadata: Metadata = {
+  title: 'Photography — Pintea Cătălin',
+  description: 'A collection of photos I\'ve taken over the years.',
+  openGraph: {
+    title: 'Photography — Pintea Cătălin',
+    description: 'A collection of photos I\'ve taken over the years.',
+  },
+}
 
 async function getPhotos(): Promise<string[]> {
   const photoDirectory = 'images/photography'

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import LayoutWrapper from '@/components/layout-wrapper'
 import PasswordGate from '@/components/password-gate'
@@ -14,6 +15,27 @@ export function generateStaticParams() {
 
 type Props = {
   params: Promise<{ id: string }>
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { id } = await params
+  const project = getProjectById(id)
+
+  if (!project) {
+    return {
+      title: 'Project Not Found — Pintea Cătălin',
+    }
+  }
+
+  return {
+    title: `${project.title} — Pintea Cătălin`,
+    description: project.description,
+    openGraph: {
+      title: `${project.title} — Pintea Cătălin`,
+      description: project.description,
+      images: project.thumbnail ? [project.thumbnail] : undefined,
+    },
+  }
 }
 
 function ProjectContent({ project }: { project: ReturnType<typeof getProjectById> }) {

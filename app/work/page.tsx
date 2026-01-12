@@ -1,7 +1,17 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import type { Metadata } from 'next'
 import LayoutWrapper from '@/components/layout-wrapper'
 import { projects } from '@/data/projects'
+
+export const metadata: Metadata = {
+  title: 'Work — Pintea Cătălin',
+  description: 'A selection of products and projects I helped create.',
+  openGraph: {
+    title: 'Work — Pintea Cătălin',
+    description: 'A selection of products and projects I helped create.',
+  },
+}
 
 export default function WorkPage() {
   return (

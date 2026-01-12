@@ -19,7 +19,7 @@ const recursive = Recursive({
 
 export const metadata: Metadata = {
   title: 'Pintea Cătălin — Digital designer, builder & entrepreneur in Cluj-Napoca',
-  description: 'Get in touch for advice on your web projects, check out my current work and personal ramblings.',
+  description: 'Get in touch for help on growing your business, check out my current work and personal ramblings.',
   icons: {
     icon: [
       { url: '/images/favicons/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
