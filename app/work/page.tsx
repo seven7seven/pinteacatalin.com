@@ -6,7 +6,7 @@ import { projects } from '@/data/projects'
 export default function WorkPage() {
   return (
     <LayoutWrapper>
-      <div className="max-w-[800px] mx-auto px-6 pb-12">
+      <div className="max-w-[860px] desktop:max-w-[1200px] 2xl:max-w-[1512px] mx-auto px-6 pb-12">
         <div className="text-center mb-6">
           <p>A selection of products and projects I helped create.</p>
         </div>

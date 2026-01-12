@@ -36,13 +36,13 @@ function ProjectContent({ project }: { project: ReturnType<typeof getProjectById
         ))}
       </div>
 
-      <p className="mb-6 leading-relaxed text-light/90">{project.description}</p>
+      <p className="mb-6 leading-relaxed text-sm text-light">{project.description}</p>
 
       <ul className="m-0 p-0 list-none mb-8">
         {project.highlights.map((highlight, index) => (
           <li
             key={index}
-            className="relative pl-5 mb-2 text-light/80 before:content-['→'] before:absolute before:left-0 before:text-main"
+            className="relative pl-5 mb-2 text-sm text-light before:content-['◦'] before:absolute before:left-0 before:text-main"
           >
             {highlight}
           </li>
