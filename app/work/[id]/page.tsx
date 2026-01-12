@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import { ChevronRight, ExternalLink } from 'lucide-react'
 import LayoutWrapper from '@/components/layout-wrapper'
 import PasswordGate from '@/components/password-gate'
 import VideoPlayer from '@/components/video-player'
@@ -66,8 +67,9 @@ function ProjectContent({ project }: { project: ReturnType<typeof getProjectById
         {project.highlights.map((highlight, index) => (
           <li
             key={index}
-            className="relative pl-5 mb-2 text-sm text-light before:content-['◦'] before:absolute before:left-0 before:text-main"
+            className="flex items-start gap-2 mb-2 text-sm text-light"
           >
+            <ChevronRight className="w-4 h-4 text-main flex-shrink-0 mt-0.5" />
             {highlight}
           </li>
         ))}
@@ -78,10 +80,10 @@ function ProjectContent({ project }: { project: ReturnType<typeof getProjectById
           href={project.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-accent no-underline hover:underline"
+          className="inline-flex items-center gap-2 text-accent font-semibold no-underline hover:underline"
         >
           Visit project
-          <span>↗</span>
+          <ExternalLink className="w-4 h-4" />
         </a>
       )}
     </article>

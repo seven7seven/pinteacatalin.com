@@ -13,7 +13,7 @@ export default function HomePage() {
           <p>I'm an entrepreneur & designer from Cluj-Napoca.</p>
           <p>
             I love shipping delightful products through business aware design,
-            and love empowering people to build their dreams.
+            and empowering people to build their dreams.
           </p>
           <p>
             Currently improving the way real estate is transactioned{" "}
@@ -40,15 +40,15 @@ export default function HomePage() {
             .
           </p>
           <p>
-            Get in touch —{" "}
+            You can reach me at {" "}
             <a
               href="mailto:catalin@rebs.ro"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline"
+              className="underline font-semibold"
             >
               catalin@rebs.ro
-            </a>
+            </a>.
           </p>
         </div>
       </div>

@@ -29,8 +29,8 @@ export const projects: Project[] = [
       'Used by 3,000+ real estate professionals',
       'Praised for best user experience',
       'World-class 84 NPS score',
-      '228 billion € in property value managed',
-      'EU fund investment of 1 mln. €'
+      '€228 billion in property value managed',
+      'EU-funded investment of €1 million'
     ],
     images: [
       '/images/work/projects/crm/crm-property.png',
